@@ -1,0 +1,246 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+/*VARIABLES (exclusivas de SCSS)*/
+/* GLOBALES */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover, a:active {
+  color: yellowgreen;
+}
+
+p {
+  margin-left: 10px;
+}
+
+h1, h2, h3 {
+  margin-left: 10px;
+  color: #033F10;
+}
+
+#titulo {
+  color: #033F10;
+  font-family: "Rampart One", cursive;
+  font-size: 40px;
+}
+
+/* ENCABEZADO Y NAVEGACION */
+header {
+  background-image: url(/imgs/ten-560-c-resize-1400x335_verde.png);
+  background-size: cover;
+  width: 100%;
+  height: 355px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  font-size: 50px;
+  font-family: "Rampart One", cursive;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  header {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navegacion {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.navegacion a {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  color: white;
+  padding: 2px;
+}
+.navegacion a:hover {
+  color: yellowgreen;
+}
+
+@media (max-width: 576px) {
+  .navegacion {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.navegacion__enlace {
+  color: #033F10;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.row {
+  padding: 0;
+  height: 600px;
+  margin-top: 5px;
+}
+
+.boletin {
+  height: 100%;
+  background-color: #D4FAA8;
+  overflow: hidden;
+}
+
+.imgNoticia {
+  height: 200px;
+  width: 300px;
+  margin-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.planes, .tutoriales, .tienda {
+  background-color: #D4FAA8;
+  height: 180px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lateral__imgLateral {
+  height: 40px;
+  width: 50px;
+}
+
+.h2-lateral {
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #D4FAA8;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+footer p { /*PRUEBA DE ANIDACION*/
+  color: #033F10;
+  font-size: small;
+  margin-top: 10px;
+}
+
+/* Aqui empieza estilo solo del formulario de contacto */
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #033F10;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #033F10;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #033F10;
+  border-color: #033F10;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #033F10;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+/* Termina estilo de formulario de contacto *//*# sourceMappingURL=estilos.css.map */
